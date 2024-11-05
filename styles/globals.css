@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .p-standard {
+    @apply px-10
+  }
+  .card {
+    @apply bg-white rounded-sm rounded-t-md shadow-lg m-3 border-2 border-t-primary
+  }
+  .card-header {
+    @apply mb-2 text-lg shadow-sm p-2 w-full text-gray-700 bg-gray-50
+  }
+  .card-body {
+    @apply p-3 mt-3 bg-white
+  }
+  .btn {
+    @apply rounded-md px-6 py-2 text-white bg-indigo-600 text-sm hover:cursor-pointer
+  }
+  .btn-primary {
+    @apply bg-green-700 hover:cursor-pointer
+  }
+  .btn-danger {
+    @apply bg-red-700 hover:cursor-pointer
+  }
+  .form-item {
+    @apply py-1
+  }
+  .form-input {
+    @apply rounded-md px-3 py-2 border text-gray-500 w-full
+  }
+  .form-label {
+      @apply flex items-center font-semibold text-gray-500
+  }
+  .form-select {
+    @apply border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
+  }
+  .form-textarea {
+    @apply w-full border rounded-md
+  }
+}
+
